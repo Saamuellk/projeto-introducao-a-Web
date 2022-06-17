@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Yasss</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+    <link rel="stylesheet" href="../js/jquery.bxslider.css">
+    <link rel="stylesheet" href="../js/magnific-popup.css">
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/jquery.bxslider.min.js"></script>
+  <script src="../js/jquery.magnific-popup.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      $('.slider').bxSlider({
+        mode: 'fade',
+        // captions: true,
+        // slideWidth: 800,
+        auto: true,
+        pager: true,
+        // speed: 100,
+        // controls: true
+        });
+
+        $('#galeria-fotos').magnificPopup({
+		delegate: 'a',
+		type: 'image',
+		closeOnContentClick: false,
+		closeBtnInside: false,
+		mainClass: 'mfp-with-zoom mfp-img-mobile',
+		image: {
+			verticalFit: true,
+			titleSrc: function(item) {
+				return item.el.attr('title') 
+            }
+		},
+		gallery: {
+			enabled: true
+		},
+		zoom: {
+			enabled: true,
+			duration: 300, // don't foget to change the duration also in CSS
+			opener: function(element) {
+				return element.find('img');
+			}
+		}
+		
+	    });
+    });
+  </script>
+</head>
+
+<body>
+    <main>
+    <header id="cabecalho">
+        <div class="container">
+            <img src="../imagens/logo.png" id="logo">
+            <nav>
+                <ul>
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="design.html">Design</a></li>
+                    <li><a href="catalogo.html">Catálogo</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="https://yasssdesign.offstore.me/shop" target="_blank">E-comerce</a></li>
+                    <li><a href="https://instagram.com/art.yasss?igshid=YmMyMTA2M2Y=" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section id="design">
+        <div class="container">
+            <h2 class="titulo-secao">Marcas únicas e encantadoras</h2>
+            <div id="galeria-fotos">
+                <a href="../imagens/originais/1.jpeg" title="Foto 01"><img src="../imagens/catalogo/1.jpeg" alt=""></a>
+                <a href="../imagens/originais/3.jpeg" title="Foto 03"><img src="../imagens/catalogo/3.jpeg" alt=""></a>
+                <a href="../imagens/originais/4.jpeg" title="Foto 04"><img src="../imagens/catalogo/4.jpeg" alt=""></a>
+                <a href="../imagens/originais/5.jpeg" title="Foto 05"><img src="../imagens/catalogo/5.jpeg" alt=""></a>
+                <a href="../imagens/originais/6.jpeg" title="Foto 06"><img src="../imagens/catalogo/6.jpeg" alt=""></a>
+                <a href="../imagens/originais/8.jpeg" title="Foto 08"><img src="../imagens/catalogo/8.jpeg" alt=""></a>
+                <a href="../imagens/originais/9.jpeg" title="Foto 09"><img src="../imagens/catalogo/9.jpeg" alt=""></a>
+                <a href="../imagens/originais/10.jpeg" title="Foto 10"><img src="../imagens/catalogo/10.jpeg" alt=""></a>
+            </div>
+        </div>
+    </section>
+</main>
+</body>
+
+</html>

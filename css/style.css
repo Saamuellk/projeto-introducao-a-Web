@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth; /*Efeito rolagem suave*/
+    color: white;
+}
+
+.container{
+    max-width: 1200px;
+    max-height: 200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.container .slider{
+    width: 1200px;
+    height: 200px;
+}
+
+#cabecalho{
+    background-image: linear-gradient(to right, rgba(255, 68, 122, 1),rgba(255, 68, 122, 0.7));
+    top: 0;
+    z-index: 2;
+}
+
+#cabecalho .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#cabecalho #logo{
+    width: 200px;
+    cursor: pointer;
+}
+
+#cabecalho nav li{
+    display: inline-block;
+}
+
+#cabecalho nav li a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px;
+}
+
+#cabecalho nav li a:hover{
+    background-color: white;
+    color:rgba(190, 65, 100, 0.8);
+    transition: all 0.3s;
+    border-radius: 25%;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.content{
+    color: rgb(255, 68, 122);
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.content h1{
+    font-family: 'Dancing Script', cursive;
+    letter-spacing: 4px;
+    color: rgb(255, 68, 122);
+    margin-top: 30px;
+}
+
+.content h2{
+    font-family: 'Satisfy', cursive;   
+    color: rgb(255, 68, 122);
+}
+
+/* Feedback */
+
+#conteudo{
+	max-width: 1000px;
+	margin: 30px auto 30px auto;
+}
+
+h2{
+	text-align: center;
+	margin-bottom: 30px;
+    color: black;
+    font-family: 'Dancing Script', cursive;
+    color: rgb(255, 68, 122);
+}
+
+p{
+    color: black;
+    /* width: 250px; */
+    margin: 0 150px 0 150px;
+}
+
+#conteudo img{
+    width: 250px;
+    margin: 0 150px 0 150px;
+    /* height: 250px; */
+}
+
+#conteudo #feedback01{
+    float: left;
+	margin-right: 20px;
+    border-radius: 50%;
+}
+#conteudo #feedback02{
+    float: right;
+	margin-left: 20px;
+    border-radius: 50%;
+}
+#conteudo #feedback03{
+    float: left;
+	margin-right: 20px;
+    border-radius: 50%;
+}
+#conteudo #feedback04{
+    float: right;
+	margin-left: 20px;
+    border-radius: 50%;
+}
+
+#conteudo p{
+	font-family: 'Dancing Script', cursive;
+    color: rgb(255, 68, 122);
+    text-align: justify; /* justifica */
+	margin-bottom: 20px; 
+	line-height: 20px; /*espaçamento entre linhas*/
+}
+
+.container-feed{
+    display: flex;
+    align-items: center;
+}
+
+/* Sobre */
+
+#corpo img{
+    margin: 30px auto;
+    display: block;
+}
+
+#logo-yasss{
+    width: 150px;
+    border-radius: 50%;
+    margin: auto;
+    display: block;
+}
+
+#corpo div{
+    max-width: 800px;
+    padding: 20px;
+    margin-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+    border-radius: 30px;
+}
+
+#corpo div p{
+    color: white;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+}
+
+.box-claro{
+    background-color:rgba(215, 98, 131, 0.5);
+    border: 3px solid rgba(255, 68, 122, 0.8);
+}
+
+#ceo{
+    width: 150px;
+    border-radius: 50%;
+    margin: auto;
+    display: block;
+}
+
+.box-escuro{
+    background-color:rgba(251, 64, 117, 0.5);
+    border: 3px solid rgba(255, 68, 122, 0.8);
+}
+
+/* Design */
+
+#design{
+    background-color: #EEE;
+    padding: 50px 0;
+}
+
+#design #galeria-fotos{
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 30px;
+}
+
+#design #galeria-fotos img{
+    display: block;
+    width: 100%;
+    transition: all 0.3s linear;
+}
+
+#design #galeria-fotos img:hover{
+    transform: scale(1.1);
+}
+
+#rodape{
+    background-color: rgba(255, 68, 122, 0.8);
+	padding: 30px;
+}
+
+#rodape address{  
+	font-style: normal;
+	text-align: center;
+	font-size: 12px;
+    margin-bottom: 10px;
+}

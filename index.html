@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Yasss</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/e68d06dbfd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- plugins -->
+    <link rel="stylesheet" href="js/magnific-popup.css">
+    <link rel="stylesheet" href="js/jquery.bxslider.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+    <!-- <script src="js/jquery.magnific-popup.js"></script> -->
+    
+
+  <script>
+    $(document).ready(function(){
+      $('.slider').bxSlider({
+        mode: 'fade',
+        auto: true,
+        pager: true,
+        });
+
+         $('#galeria-fotos').magnificPopup({
+		 delegate: 'a',
+		 type: 'image',
+		 closeOnContentClick: false,
+		 closeBtnInside: false,
+	     mainClass: 'mfp-with-zoom mfp-img-mobile',
+		 image: {
+		 	verticalFit: true,
+		 	titleSrc: function(item) {
+		 		return item.el.attr('title') 
+             }
+		 },
+		 gallery: {
+		 	enabled: true
+		 },
+		 zoom: {
+		 	enabled: true,
+		 	duration: 300, // don't foget to change the duration also in CSS
+		 	opener: function(element) {
+		 		return element.find('img');
+		 	}
+		 }
+		
+	     });
+    });
+  </script>
+
+</head>
+
+<body>
+    <main>
+        <header id="cabecalho">
+            <div class="container">
+                <img src="imagens/logo.png" id="logo">
+                <nav>
+                    <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="internas/design.html">Design</a></li>
+                        <li><a href="internas/catalogo.html">Catálogo</a></li>
+                        <li><a href="internas/feedback.html">Feedback</a></li>
+                        <li><a href="internas/sobre.html">Sobre</a></li>
+                        <li><a href="https://yasssdesign.offstore.me/shop" target="_blank">E-comerce</a></li>
+                        <li><a href="https://instagram.com/art.yasss?igshid=YmMyMTA2M2Y=" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section id="banners">
+            <div class="container">
+                <ul class="slider">
+                    <li><img src="imagens/capas/capa-1.jpg"></li>
+                    <li><img src="imagens/capas/capa-2.jpg"></li>
+                    <li><img src="imagens/capas/capa-3.jpg"></li>
+                </ul>
+            </div>
+        </section>
+
+        <div class="content">
+            <h1 class="texto-primario">Personalizados | Design</h1>
+            <h2 class="texto-secundario">
+                <br> Papelaria para Empreendedores & Personalizados.
+                <br> ღ Conheça nossa loja nos cards acima! ღ
+            </h2>
+        </div>
+
+
+        <footer id="rodape"><!--rodapé-->
+            <address>
+                site desenvolvido pelo aluno Samuel Silva - primeiro período em Sistema de Informação  2022 - UniRios<br>
+                Loja virtual Art Yasss - Petrolândia - Pernambuco - Brasil<br>
+                Fone/Whatsapp: (87) 9 9678-9940
+            </address>
+        </footer>
+    </main>
+</body>
+</html>
